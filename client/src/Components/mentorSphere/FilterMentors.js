@@ -5,6 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import FilterMentor from "./filterMentor.js";
 import ReactPaginate from 'react-paginate';
 
+
 const FilterMentors = ({formData}) => {
     const dispatch = useDispatch();
     const mentor = useSelector((state) => state.mentor);
@@ -77,6 +78,7 @@ const FilterMentors = ({formData}) => {
             <ReactPaginate
                   onPageChange={paginate}
                   pageCount={4}
+                  breakLabel={"..."}
                   previousLabel={'Prev'}
                   nextLabel={'Next'}
                   containerClassName={'pagination'}
