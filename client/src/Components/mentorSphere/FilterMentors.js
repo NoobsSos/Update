@@ -39,7 +39,6 @@ const FilterMentors = ({formData}) => {
     useEffect(() => {
         getMentors()
     }, [filter])
-
     //getMentors()
 
     return (
