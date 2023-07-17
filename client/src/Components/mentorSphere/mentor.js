@@ -7,6 +7,8 @@ import FilterMentors from "./FilterMentors.js";
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
+import ReactPaginate from 'react-paginate';
+
 
 const initialValues = {
   minPrice: "",
@@ -16,14 +18,25 @@ const initialValues = {
   groupLessons: "",
   alone: "",
   qualification: "",
+  page: "",
 }
 
 const Mentor = () => {
 
   const [formData, updateFormData] = useState(initialValues);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const paginate = ({ selected }) => {
+    setCurrentPage(selected + 1);
+  };
 
   const handleClicK = (e) => {
+    updateFormData({
+      ...formData,
 
+      // Trimming any whitespace
+      [e.target.name]: e.target.value.trim()
+    });
   }
 
   const handleChange = (e) => {
@@ -128,6 +141,7 @@ const Mentor = () => {
             <div className="mentor-list">
               <FilterMentors formData={formData}/>
             </div>
+
           </div>
         </div>
       </div>

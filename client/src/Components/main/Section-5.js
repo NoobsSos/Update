@@ -11,37 +11,25 @@ const SectionFive = () => {
       <Accordion.Item eventKey="0">
         <Accordion.Header>Як знайти необхідний курс/матеріал для вивчення?</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Використовуйте пошукові системи та нашу освітню платформу для знаходження необхідного курсу або матеріалу для вивчення.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
         <Accordion.Header>Які є можливості взаємодії з іншими користувачами?</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. 
+          В будь-який момент ви можете написати ментору який вас зацікавив, або віповісти учню який написав вам. 
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
         <Accordion.Header>Чи є можливість отримати сертифікат про успішне закінчення курсу?</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. 
+            Наша платформа не передбачає курсів, а лише уроків з менторами, тому ви не зможете отримати сертифікат від нас, проте ментор може вам його видати особисто
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3">
         <Accordion.Header>Як можна змінити свій профіль на сайті, включаючи пароль та електронну адресу?</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. 
+          У вашому профілі є можливіть його редагування, саме там ви можете все це зробити
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="4">
@@ -56,28 +44,7 @@ const SectionFive = () => {
       <Accordion.Item eventKey="5">
         <Accordion.Header>Як можна звернутися до підтримки користувачів, якщо виникли проблеми з сайтом?</Accordion.Header>
         <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. 
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="6">
-        <Accordion.Header>Які є можливості взаємодії з іншими користувачами?</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. 
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="7">
-        <Accordion.Header>Якщо мені потрібна допомога, куди мені звернутися?</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. 
+          Внизу вебсайту є форма з допомогою якої можна з нами зв'язатися.
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

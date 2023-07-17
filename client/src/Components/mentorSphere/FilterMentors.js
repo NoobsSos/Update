@@ -86,7 +86,11 @@ const FilterMentors = ({formData}) => {
                   previousLinkClassName={'page-number'}
                   nextLinkClassName={'page-number'}
                   activeLinkClassName={'active'}
-                  onClick={handleChange}
+                  onClick={handleChange && window.scrollTo({
+                                                top: 0,
+                                                behavior: "smooth" // Опціонально: зробити прокрутку плавною
+                                            })
+                            }
                />
         </>
     )
