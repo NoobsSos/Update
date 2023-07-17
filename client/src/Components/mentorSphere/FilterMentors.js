@@ -33,7 +33,7 @@ const FilterMentors = ({formData}) => {
         const getMentors = async () => {
         try {
        
-        const response = await fetch(`http://localhost:3001/mentor?page=${currentPage}&${filter}`, {
+        const response = await fetch(`https://noobssossss.onrender.com/mentor?page=${currentPage}&${filter}`, {
             method: 'GET',
         });
 
