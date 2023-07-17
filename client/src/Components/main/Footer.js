@@ -30,7 +30,7 @@ const Footer = () => {
     e.preventDefault()
     console.log(formData);
 
-    const userResponse = await axios.post('http://localhost:3001/userquestion', formData)
+    const userResponse = await axios.post('https://noobssossss.onrender.com/userquestion', formData)
     .then(function (response) {
       console.log(response);
       console.log(formData);

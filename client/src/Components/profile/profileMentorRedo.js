@@ -79,7 +79,7 @@ const ProfileMentorRedo = () => {
       <div class="main-profileStudent">
         <div className="sidebar">
           <div className="photoStudent">
-          <img class="photo-avatar" src={`http://localhost:3001/assets/${picturePath}`} alt="Mentor photo"/>
+          <img class="photo-avatar" src={`https://noobssossss.onrender.com/assets/${picturePath}`} alt="Mentor photo"/>
           </div>
         </div>
         <div className="mainProfileStudentRedo">

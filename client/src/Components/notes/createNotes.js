@@ -44,7 +44,7 @@ const CreateNotes = () => {
     e.preventDefault()
     console.log(formData);
 
-    const mentorResponse = await axios.post('http://localhost:3001/note/mentor', formData)
+    const mentorResponse = await axios.post('https://noobssossss.onrender.com/note/mentor', formData)
     .then(function (response) {
       console.log(response);
       console.log(formData);
@@ -54,7 +54,7 @@ const CreateNotes = () => {
     });
     console.log(formData);
 
-    const studentResponse = await axios.post('http://localhost:3001/note/student', formData)
+    const studentResponse = await axios.post('https://noobssossss.onrender.com/note/student', formData)
     .then(function (response) {
       console.log(response);
       console.log(formData);
@@ -78,13 +78,13 @@ const CreateNotes = () => {
             <div className="avatar">
             {status == "student" && (
               <button className="button-avatar" onClick={() => navigate(`/profile-student/${userId}`)}>
-               <img className="avatar-icon" width={300} src={`http://localhost:3001/assets/${picturePath}`} ></img>
+               <img className="avatar-icon" width={300} src={`https://noobssossss.onrender.com/assets/${picturePath}`} ></img>
              </button>
              )}
 
              {status == "mentor" && (
               <button className="button-avatar" onClick={() => navigate(`/profile-mentor/${userId}`)}>
-                <img className="avatar-icon" width={300} src={`http://localhost:3001/assets/${picturePath}`} ></img>
+                <img className="avatar-icon" width={300} src={`https://noobssossss.onrender.com/assets/${picturePath}`} ></img>
              </button>
              )}
             </div>

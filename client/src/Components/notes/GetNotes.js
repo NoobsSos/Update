@@ -13,7 +13,7 @@ const GetNotes = () => {
 
   const NotesGet = async () => {
       try {
-      const response = await fetch(`http://localhost:3001/note?userId=${userId}`, {
+      const response = await fetch(`https://noobssossss.onrender.com/note?userId=${userId}`, {
           method: 'GET',
       });
 

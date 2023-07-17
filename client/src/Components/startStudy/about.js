@@ -40,12 +40,12 @@ const AboutStudy = () => {
     e.preventDefault()
     console.log(formData);
 
-    const newStudent = await axios.put(`http://localhost:3001/mentor`, formData)
+    const newStudent = await axios.put(`https://noobssossss.onrender.com/mentor`, formData)
     .then(function (response) {
       console.log(response)
     })
 
-    const userResponse = await axios.post('http://localhost:3001/lesson', formData)
+    const userResponse = await axios.post('https://noobssossss.onrender.com/lesson', formData)
     .then(function (response) {
       console.log(response);
       console.log(formData);

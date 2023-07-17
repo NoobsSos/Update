@@ -41,7 +41,7 @@ const ProfileStudentRedo = () => {
     e.preventDefault();
     console.log(formData);
 
-    const updateResponse = await axios.patch(`http://localhost:3001/student/${userId}`, formData)
+    const updateResponse = await axios.patch(`https://noobssossss.onrender.com/student/${userId}`, formData)
     .then(function (response) {
       console.log(response);
       console.log(formData);
@@ -53,7 +53,7 @@ const ProfileStudentRedo = () => {
   };
 
  const getUser = async () => {
-    const studentResponse = await axios.get(`http://localhost:3001/student/${userId}`)
+    const studentResponse = await axios.get(`https://noobssossss.onrender.com/student/${userId}`)
     .then(function (response) {
         const data = response.data;
         console.log(data);
@@ -106,7 +106,7 @@ const ProfileStudentRedo = () => {
       <div class="main-profileStudent">
         <div className="sidebar">
           <div className="photoStudent">
-          <img className="photoStudent-photo" width={300} src={`http://localhost:3001/assets/${picturePath}`}></img>
+          <img className="photoStudent-photo" width={300} src={`https://noobssossss.onrender.com/assets/${picturePath}`}></img>
           </div>
         </div>
         <div className="mainProfileStudentRedo">

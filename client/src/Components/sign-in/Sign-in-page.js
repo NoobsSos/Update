@@ -32,12 +32,12 @@ const SignInPage = () => {
     e.preventDefault()
     console.log(formData);
 
-    const resp = await axios.get(`http://localhost:3001/blog`)
+    const resp = await axios.get(`https://noobssossss.onrender.com/blog`)
     .then(function(response) {
       console.log(response);
     })
 
-    const studentResponse = await axios.post('http://localhost:3001/student/login', formData, {
+    const studentResponse = await axios.post('https://noobssossss.onrender.com/student/login', formData, {
       headers: { "Content-Type": "application/json" }
     })
     .then(function (response) {
@@ -60,7 +60,7 @@ const SignInPage = () => {
       console.log(error);
     });
 
-    const userResponse = await axios.post('http://localhost:3001/mentor/login', formData, {
+    const userResponse = await axios.post('https://noobssossss.onrender.com/mentor/login', formData, {
       headers: { "Content-Type": "application/json" }
     })
     .then(function (response) {

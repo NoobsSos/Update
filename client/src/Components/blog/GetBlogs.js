@@ -12,7 +12,7 @@ const GetBlogs = () => {
 
   const BlogsGet = async () => {
       try {
-      const response = await fetch(`http://localhost:3001/blog`, {
+      const response = await fetch(`https://noobssossss.onrender.com/blog`, {
           method: 'GET',
       });
 

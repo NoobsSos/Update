@@ -28,13 +28,13 @@ const ViewReminder = () => {
       <div className="avatar">
             {status == "student" && (
               <button className="button-avatar" onClick={() => navigate(`/profile-student/${userId}`)}>
-                <img className="avatar-icon" width={300} src={`http://localhost:3001/assets/${picturePath}`} ></img>
+                <img className="avatar-icon" width={300} src={`https://noobssossss.onrender.com/assets/${picturePath}`} ></img>
              </button>
              )}
 
              {status == "mentor" && (
               <button className="button-avatar" onClick={() => navigate(`/profile-mentor/${userId}`)}>
-                <img className="avatar-icon" width={300} src={`http://localhost:3001/assets/${picturePath}`} ></img>
+                <img className="avatar-icon" width={300} src={`https://noobssossss.onrender.com/assets/${picturePath}`} ></img>
              </button>
              )}
         </div>

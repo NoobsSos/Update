@@ -67,7 +67,7 @@ const ProfileMentor = () => {
   const { userId } = useParams();
   const dispatch = useDispatch();
   const getUser = async () => {
-    const mentorResponse = await axios.get(`http://localhost:3001/mentor/${userId}`)
+    const mentorResponse = await axios.get(`https://noobssossss.onrender.com/mentor/${userId}`)
     .then(function (response) {
         const data = response.data;
         setUser(data);
@@ -82,7 +82,7 @@ const ProfileMentor = () => {
       console.log(error);
     });
 
-    const lessonsResponse = await axios.get(`http://localhost:3001/lesson?student=${userId}`)
+    const lessonsResponse = await axios.get(`https://noobssossss.onrender.com/lesson?student=${userId}`)
     .then(function (response) {
       const data = response.data;
       dispatch(
@@ -95,10 +95,10 @@ const ProfileMentor = () => {
   }
 
   const getSingleLesson = async (id) => {
-    const lessonsResponse = axios.get(`http://localhost:3001/lesson?_id=${id}`)
+    const lessonsResponse = axios.get(`https://noobssossss.onrender.com/lesson?_id=${id}`)
     .then(function (response) {
       const data = response.data;
-      const mentor = axios.get(`http://localhost:3001/mentor/${data[0].mentor._id}`)
+      const mentor = axios.get(`https://noobssossss.onrender.com/mentor/${data[0].mentor._id}`)
       .then(function (mentorResponse) {
         const mentorData = mentorResponse.data
         setMentor(mentorData)
@@ -169,7 +169,7 @@ const ProfileMentor = () => {
       <div class="left-and-right">
         <div class="left-section">
           <div class="photo-container">
-              <img class="photo-avatar" src={`http://localhost:3001/assets/${picturePath}`} alt="Mentor photo"/>
+              <img class="photo-avatar" src={`https://noobssossss.onrender.com/assets/${picturePath}`} alt="Mentor photo"/>
           </div>
           <div class="functions-container">
             <div class="functions-title">

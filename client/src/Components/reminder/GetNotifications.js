@@ -14,7 +14,7 @@ const GetNotifications = () => {
 
   const NotificationsGet = async () => {
       try {
-      const response = await fetch(`http://localhost:3001/notification?recieverId=${userId}`, {
+      const response = await fetch(`https://noobssossss.onrender.com/notification?recieverId=${userId}`, {
           method: 'GET',
       });
 

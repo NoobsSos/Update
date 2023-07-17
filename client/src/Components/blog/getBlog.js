@@ -23,7 +23,7 @@ const getBlog = ({text, name, picturePath}) => {
                   <a href="#">
                     <div className="blog-item">
                       <div className="mentor-photo">
-                      <img src={`http://localhost:3001/assets/${picturePath}`} className="not-mentor-photo-img" alt="mentor-photo"></img>
+                      <img src={`https://noobssossss.onrender.com/assets/${picturePath}`} className="not-mentor-photo-img" alt="mentor-photo"></img>
                       </div>
                       <div className="blog-mentor">
                         <h2 className="blog-mentor-title">{name}</h2>

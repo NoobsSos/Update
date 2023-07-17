@@ -13,7 +13,7 @@ const FilterMentor = ({name, description, qualification, mentorId, picturePath, 
         <>
           <div className="mentor-item">
                 <div className="mentor-photo">
-                  <img className="mentor-photo-img" src={`http://localhost:3001/assets/${picturePath}`}></img>
+                  <img className="mentor-photo-img" src={`https://noobssossss.onrender.com/assets/${picturePath}`}></img>
                 </div>
                 <div className="mentor-info">
                   <div className="mentor-description">

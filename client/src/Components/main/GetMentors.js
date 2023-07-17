@@ -14,7 +14,7 @@ const GetMentors = () => {
   const MentorsGet = async () => {
       try {
 
-      const response = await fetch(`http://localhost:3001/mentor?bestMentor=true`, {
+      const response = await fetch(`https://noobssossss.onrender.com/mentor?bestMentor=true`, {
           method: 'GET',
       });
 

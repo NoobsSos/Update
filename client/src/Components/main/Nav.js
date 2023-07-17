@@ -115,12 +115,12 @@ function App() {
                   <>
                       {status == "student" && (
                         <button onClick={() => navigate(`/profile-student/${userId}`)} className='profilePic'>
-                          <img className='profilePic-img' width={60} src={`http://localhost:3001/assets/${picturePath}`} />
+                          <img className='profilePic-img' width={60} src={`https://noobssossss.onrender.com/assets/${picturePath}`} />
                         </button>
                       )}
                       {status == "mentor" && (
                         <button onClick={() => navigate(`/profile-mentor/${userId}`)} className='profilePic'>
-                          <img className='profilePic-img' width={60} src={`http://localhost:3001/assets/${picturePath}`} />
+                          <img className='profilePic-img' width={60} src={`https://noobssossss.onrender.com/assets/${picturePath}`} />
                         </button>
                       )}
                     <button className='logout' onClick={() => dispatch(setLogout()) && navigate('/')}>Вийти</button>

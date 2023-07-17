@@ -58,7 +58,7 @@ const ProfileStudent = () => {
   const lesson = useSelector((state) => state.lesson)
   const token = useSelector((state) => state.token);
   const getUser = async () => {
-    const studentResponse = await axios.get(`http://localhost:3001/student/${userId}`)
+    const studentResponse = await axios.get(`https://noobssossss.onrender.com/student/${userId}`)
     .then(function (response) {
         const data = response.data;
         setUser(data);
@@ -68,7 +68,7 @@ const ProfileStudent = () => {
     });
 
 
-    const lessonsResponse = await axios.get(`http://localhost:3001/lesson?student=${userId}`)
+    const lessonsResponse = await axios.get(`https://noobssossss.onrender.com/lesson?student=${userId}`)
     .then(function (response) {
       const data = response.data;
       dispatch(
@@ -81,10 +81,10 @@ const ProfileStudent = () => {
   }
 
   const getSingleLesson = async (id) => {
-    const lessonsResponse = axios.get(`http://localhost:3001/lesson?_id=${id}`)
+    const lessonsResponse = axios.get(`https://noobssossss.onrender.com/lesson?_id=${id}`)
     .then(function (response) {
       const data = response.data;
-      const mentor = axios.get(`http://localhost:3001/mentor/${data[0].mentor._id}`)
+      const mentor = axios.get(`https://noobssossss.onrender.com/mentor/${data[0].mentor._id}`)
       .then(function (mentorResponse) {
         const mentorData = mentorResponse.data
         setMentor(mentorData)
@@ -97,9 +97,9 @@ const ProfileStudent = () => {
   }
 
   const leaveLesson = async (id) => {
-    const lessonResponse = axios.delete(`http://localhost:3001/lesson/${id}`)
+    const lessonResponse = axios.delete(`https://noobssossss.onrender.com/lesson/${id}`)
 
-    const lessonsResponse = await axios.get(`http://localhost:3001/lesson?student=${userId}`)
+    const lessonsResponse = await axios.get(`https://noobssossss.onrender.com/lesson?student=${userId}`)
     .then(function (response) {
       const data = response.data;
       dispatch(
@@ -151,7 +151,7 @@ const ProfileStudent = () => {
       <div class="main-profileStudent">
         <div className="sidebar">
           <div className="photoStudent">
-            <img className="photoStudent-photo" width={300} src={`http://localhost:3001/assets/${picturePath}`} ></img>
+            <img className="photoStudent-photo" width={300} src={`https://noobssossss.onrender.com/assets/${picturePath}`} ></img>
             {/* <img className="photoStudent-photo" width={300} src={photoStudent} ></img> */}
 
           </div>

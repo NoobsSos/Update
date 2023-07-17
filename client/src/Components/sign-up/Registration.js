@@ -39,13 +39,13 @@ const Registration = () => {
     const photoData = new FormData(form);
 
 
-    const photoResponse = await axios.post('http://localhost:3001/student/photo', photoData, {
+    const photoResponse = await axios.post('https://noobssossss.onrender.com/student/photo', photoData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }
     })
 
-    const userResponse = await axios.post('http://localhost:3001/student/register', formData, {
+    const userResponse = await axios.post('https://noobssossss.onrender.com/student/register', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }

@@ -44,7 +44,7 @@ const StartStudy = () => {
     const { userId } = useParams();
 
     const getUser = async () => {
-      const mentorResponse = await axios.get(`http://localhost:3001/mentor/${userId}`)
+      const mentorResponse = await axios.get(`https://noobssossss.onrender.com/mentor/${userId}`)
       .then(function (response) {
           const data = response.data;
           setUser(data);
@@ -103,7 +103,7 @@ const StartStudy = () => {
       <div class="left-and-right">
         <div class="left-section">
           <div class="photo-container">
-              <img class="photo-avatar" src={`http://localhost:3001/assets/${picturePath}`} alt="Mentor photo"/>
+              <img class="photo-avatar" src={`https://noobssossss.onrender.com/assets/${picturePath}`} alt="Mentor photo"/>
           </div>
           <div class="functions-container">
             <div class="functions-title">

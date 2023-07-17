@@ -18,7 +18,7 @@ const GetMentor = ({mentorId, name, description, picturePath}) => {
                 <h2 className='description-title-section-3'>Programing:</h2>
               </div>
               <div className='image-section-3'>
-                <img className='img-mentor-mini' src={`http://localhost:3001/assets/${picturePath}`} alt=''></img>
+                <img className='img-mentor-mini' src={`https://noobssossss.onrender.com/assets/${picturePath}`} alt=''></img>
               </div>
             </div>
             <div className='info-about-tutor'>
