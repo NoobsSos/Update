@@ -13,7 +13,7 @@ import Button from 'react-bootstrap/Button';
 
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
@@ -40,6 +40,7 @@ const initialValuesMentor = {
 
 const ProfileStudent = () => {
 
+  const navigate = useNavigate()
   const [smShow, setSmShow] = useState(false);
   const [lgShow, setLgShow] = useState(false);
   const [lgnewShow, setnewLgShow] = useState(false);
@@ -97,8 +98,8 @@ const ProfileStudent = () => {
   }
 
   const leaveLesson = async (id) => {
-    const lessonResponse = axios.delete(`https://noobssossss.onrender.com/lesson/${id}`)
-
+    const lessonResponse = await axios.delete(`https://noobssossss.onrender.com/lesson/${id}`)
+    
     const lessonsResponse = await axios.get(`https://noobssossss.onrender.com/lesson?student=${userId}`)
     .then(function (response) {
       const data = response.data;
@@ -190,7 +191,7 @@ const ProfileStudent = () => {
         <div class="mainSection-student">
           <div className="sections-profile">
             <div className="myLessons-student">
-              <div className="myLessons-btn">Мої заняття</div>
+              {lesson[0] != null ? <div className="myLessons-btn">Мої уроки</div> : <button onClick={() => navigate("/mentor-page")} className="myLessons-btn">Знайти ментора</button>}
               <div className="block-lessons">
               {(lesson != null) && lesson.map((el, index) => {
                   return (
@@ -222,25 +223,6 @@ const ProfileStudent = () => {
 
                   );
                 })}
-              </div>
-            </div>
-            <div className="mytasks-student">
-              <div className="myLessons-btn">Завдання:</div>
-              <div className="block-tasks">
-                <div class="item-tasks">
-                  <div>
-                    <p>Тести:</p>
-                    <a href="http://yourtesturl.com">http://yourtesturl.com </a>
-                  </div>
-                  <div>
-                    <p>Відео:</p>
-                    <a href="https://youtu.be/6SjBv5AuL8E">https://youtu.be/6SjBv5AuL8E</a>
-                  </div>
-                  <div>
-                    <p>Тести:</p>
-                    <a href="http://yourmanualurl.com" >http://yourmanualurl.com </a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -351,7 +333,9 @@ const ProfileStudent = () => {
           Ви збираєтеся покинути урок Підготовка до спортивних змагань від ментора Менторіна Батьківна
           </div>
           <div className="new-buttons-section-modal">
-            <button className="new-modal-finish-study" onClick={() => leaveLesson(selectedLessonID) && window.location.reload()}>
+            <button className="new-modal-finish-study" onClick={() => leaveLesson(selectedLessonID) && setTimeout(() => {
+              window.location.reload()
+            }, 2000)}>
               Так, покинути
             </button>
             <button className="new-modal-continue-study" onClick={() => setnewLgShow(false)}>
